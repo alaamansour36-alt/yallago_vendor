@@ -178,7 +178,7 @@ class SplashScreen extends StatelessWidget {
                     style: const TextStyle(color: Colors.white70, fontSize: 14),
                   ),
                   const Spacer(),
-                  _RoleSelector(customer: customer),
+                  const _RoleSelector(customer: customer),
                   const SizedBox(height: 14),
                   FilledButton.icon(
                     onPressed: () =>
