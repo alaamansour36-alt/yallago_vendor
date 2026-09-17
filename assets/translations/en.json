@@ -1,0 +1,94 @@
+{
+  "common": {
+    "cancel": "Cancel",
+    "save": "Save",
+    "total": "Total",
+    "items_in_cart": "{count} items in cart",
+    "view_cart": "View cart"
+  },
+  "vendor": {
+    "hero": {
+      "title": "Manage the store from vendor APIs only",
+      "pending": "Pending",
+      "products": "Products",
+      "categories": "Categories"
+    },
+    "dashboard": {
+      "title": "Vendor dashboard",
+      "quick_summary": "Quick summary",
+      "available_products": "Available products",
+      "active_orders": "Active orders",
+      "latest_orders": "Latest orders",
+      "empty_orders_title": "No vendor orders yet",
+      "empty_orders_subtitle": "Orders from GET /api/orders will appear here.",
+      "nav": {
+        "overview": "Overview",
+        "products": "Products",
+        "orders": "Orders",
+        "categories": "Categories"
+      }
+    },
+    "login": {
+      "title": "Vendor sign in",
+      "subtitle": "This login is vendor-only and maps directly to POST /api/authentication/login.",
+      "email": "Email",
+      "email_required": "Email is required",
+      "email_hint": "vendor@example.com",
+      "password": "Password",
+      "password_required": "Password is required",
+      "password_hint": "P@ssw0rd123",
+      "signing_in": "Signing in...",
+      "sign_in": "Sign in"
+    },
+    "products": {
+      "title": "My products",
+      "add": "Add product",
+      "empty_title": "No products found",
+      "empty_subtitle": "Create products with POST /api/products.",
+      "uncategorized": "Uncategorized"
+    },
+    "orders": {
+      "title": "Manage orders",
+      "empty_title": "No orders available",
+      "empty_subtitle": "Vendor order updates use the /api/orders vendor endpoints.",
+      "customer": "Customer"
+    },
+    "categories": {
+      "title": "Store categories",
+      "add": "Add category",
+      "empty_title": "No categories found",
+      "empty_subtitle": "Categories come from GET /api/categories/mine."
+    },
+    "order_detail": {
+      "title": "Order details",
+      "unavailable": "Order details unavailable",
+      "no_delivery_address": "No delivery address",
+      "items": "Items",
+      "delivery_instructions": "Delivery instructions",
+      "no_instructions": "No instructions provided.",
+      "update_status": "Update status",
+      "payment_status": "Payment status"
+    },
+    "product_editor": {
+      "add_title": "Add product",
+      "edit_title": "Edit product",
+      "name": "Name",
+      "name_required": "Name is required",
+      "description": "Description",
+      "price": "Price",
+      "price_required": "Valid price is required",
+      "no_category": "No category",
+      "category": "Category",
+      "image_url": "Image URL",
+      "available": "Available",
+      "saving": "Saving...",
+      "save": "Save product",
+      "delete": "Delete product"
+    },
+    "category_dialog": {
+      "title": "Add category",
+      "name": "Name",
+      "image_url": "Image URL"
+    }
+  }
+}

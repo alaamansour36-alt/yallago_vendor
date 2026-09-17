@@ -1,0 +1,94 @@
+{
+  "common": {
+    "cancel": "إلغاء",
+    "save": "حفظ",
+    "total": "الإجمالي",
+    "items_in_cart": "{count} أصناف في السلة",
+    "view_cart": "شوف السلة"
+  },
+  "vendor": {
+    "hero": {
+      "title": "إدارة المتجر من واجهات التاجر فقط",
+      "pending": "طلبات معلقة",
+      "products": "منتجات",
+      "categories": "أقسام"
+    },
+    "dashboard": {
+      "title": "لوحة التاجر",
+      "quick_summary": "ملخص سريع",
+      "available_products": "منتجات متاحة",
+      "active_orders": "طلبات نشطة",
+      "latest_orders": "آخر الطلبات",
+      "empty_orders_title": "لا توجد طلبات للتاجر بعد",
+      "empty_orders_subtitle": "ستظهر هنا الطلبات القادمة من GET /api/orders.",
+      "nav": {
+        "overview": "الرئيسية",
+        "products": "المنتجات",
+        "orders": "الطلبات",
+        "categories": "الأقسام"
+      }
+    },
+    "login": {
+      "title": "تسجيل دخول التاجر",
+      "subtitle": "الدخول هنا مخصص للتاجر فقط ويرتبط مباشرة بـ POST /api/authentication/login.",
+      "email": "البريد الإلكتروني",
+      "email_required": "البريد الإلكتروني مطلوب",
+      "email_hint": "vendor@example.com",
+      "password": "كلمة المرور",
+      "password_required": "كلمة المرور مطلوبة",
+      "password_hint": "P@ssw0rd123",
+      "signing_in": "جاري الدخول...",
+      "sign_in": "دخول"
+    },
+    "products": {
+      "title": "منتجاتي",
+      "add": "إضافة منتج",
+      "empty_title": "لا توجد منتجات",
+      "empty_subtitle": "أنشئ منتجات عبر POST /api/products.",
+      "uncategorized": "بدون قسم"
+    },
+    "orders": {
+      "title": "إدارة الطلبات",
+      "empty_title": "لا توجد طلبات متاحة",
+      "empty_subtitle": "تحديثات طلبات التاجر تستخدم نقاط /api/orders الخاصة بالتاجر.",
+      "customer": "العميل"
+    },
+    "categories": {
+      "title": "أقسام المتجر",
+      "add": "إضافة قسم",
+      "empty_title": "لا توجد أقسام",
+      "empty_subtitle": "تأتي الأقسام من GET /api/categories/mine."
+    },
+    "order_detail": {
+      "title": "تفاصيل الطلب",
+      "unavailable": "تفاصيل الطلب غير متاحة",
+      "no_delivery_address": "لا يوجد عنوان توصيل",
+      "items": "الأصناف",
+      "delivery_instructions": "تعليمات التوصيل",
+      "no_instructions": "لا توجد تعليمات مضافة.",
+      "update_status": "تحديث الحالة",
+      "payment_status": "حالة الدفع"
+    },
+    "product_editor": {
+      "add_title": "إضافة منتج",
+      "edit_title": "تعديل المنتج",
+      "name": "الاسم",
+      "name_required": "الاسم مطلوب",
+      "description": "الوصف",
+      "price": "السعر",
+      "price_required": "السعر الصحيح مطلوب",
+      "no_category": "بدون قسم",
+      "category": "القسم",
+      "image_url": "رابط الصورة",
+      "available": "متاح",
+      "saving": "جاري الحفظ...",
+      "save": "حفظ المنتج",
+      "delete": "حذف المنتج"
+    },
+    "category_dialog": {
+      "title": "إضافة قسم",
+      "name": "الاسم",
+      "image_url": "رابط الصورة"
+    }
+  }
+}
