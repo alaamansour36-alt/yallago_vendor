@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/constants/app_colors.dart';
-import '../../../../core/constants/layout.dart';
 import '../../../../core/widgets/shared_widgets.dart';
 import '../cubit/vendor_auth_cubit.dart';
+import 'vendor_register_screen.dart';
 
 class VendorLoginScreen extends StatefulWidget {
   const VendorLoginScreen({super.key});
@@ -134,6 +134,19 @@ class _VendorLoginScreenState extends State<VendorLoginScreen> {
                                     );
                               }
                             },
+                    ),
+                    const SizedBox(height: 12),
+                    OutlinedButton(
+                      onPressed: state.loading
+                          ? null
+                          : () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute<void>(
+                                  builder: (_) => const VendorRegisterScreen(),
+                                ),
+                              );
+                            },
+                      child: const Text('Create vendor account'),
                     ),
                   ],
                 ),

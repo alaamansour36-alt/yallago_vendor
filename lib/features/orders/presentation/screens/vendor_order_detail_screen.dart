@@ -5,7 +5,6 @@ import 'package:yallago/features/catalog/data/models/vendor_models.dart';
 import 'package:yallago/features/catalog/presentation/widgets/vendor_shared_widgets.dart';
 
 import '../../../../core/constants/app_colors.dart';
-import '../../../../core/constants/layout.dart';
 import '../../../../core/widgets/shared_widgets.dart';
 import '../cubit/vendor_orders_cubit.dart';
 

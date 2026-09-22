@@ -2,6 +2,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:yallago/features/catalog/data/models/vendor_models.dart';
 
 import '../../data/repositories/vendor_auth_repository.dart';
+import '../../data/services/vendor_auth_service.dart';
 
 class VendorAuthState {
   const VendorAuthState({
@@ -45,6 +46,18 @@ class VendorAuthCubit extends Cubit<VendorAuthState> {
       emit(VendorAuthState(session: session));
     } catch (error) {
       print('Login error: $error');
+      emit(state.copyWith(
+          loading: false, error: error.toString(), clearSession: true));
+    }
+  }
+
+  Future<void> register(VendorRegisterRequest request) async {
+    emit(state.copyWith(loading: true, clearError: true));
+    try {
+      final session = await _repository.register(request);
+      emit(VendorAuthState(session: session));
+    } catch (error) {
+      print('Register error: $error');
       emit(state.copyWith(
           loading: false, error: error.toString(), clearSession: true));
     }

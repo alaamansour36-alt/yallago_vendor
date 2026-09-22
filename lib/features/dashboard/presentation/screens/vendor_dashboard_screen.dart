@@ -11,7 +11,6 @@ import 'package:yallago/features/orders/presentation/cubit/vendor_orders_cubit.d
 import 'package:yallago/features/orders/presentation/screens/vendor_order_detail_screen.dart';
 
 import '../../../../core/constants/app_colors.dart';
-import '../../../../core/constants/layout.dart';
 import '../../../../core/widgets/shared_widgets.dart';
 
 class VendorDashboardScreen extends StatefulWidget {

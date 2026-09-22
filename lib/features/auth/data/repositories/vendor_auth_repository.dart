@@ -12,4 +12,7 @@ class VendorAuthRepository {
     required String password,
   }) =>
       _service.login(email: email, password: password);
+
+  Future<AuthSession> register(VendorRegisterRequest request) =>
+      _service.register(request);
 }
