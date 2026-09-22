@@ -1,18 +1,18 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:yallago/features/auth/presentation/cubit/vendor_auth_cubit.dart';
+import 'package:yallago/features/catalog/data/models/vendor_models.dart';
+import 'package:yallago/features/catalog/presentation/cubit/vendor_catalog_cubit.dart';
+import 'package:yallago/features/catalog/presentation/dialogs/category_dialog.dart';
+import 'package:yallago/features/catalog/presentation/widgets/product_editor_sheet.dart';
+import 'package:yallago/features/catalog/presentation/widgets/vendor_shared_widgets.dart';
+import 'package:yallago/features/orders/presentation/cubit/vendor_orders_cubit.dart';
+import 'package:yallago/features/orders/presentation/screens/vendor_order_detail_screen.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/layout.dart';
 import '../../../../core/widgets/shared_widgets.dart';
-import '../../data/models/vendor_models.dart';
-import '../cubit/vendor_auth_cubit.dart';
-import '../cubit/vendor_catalog_cubit.dart';
-import '../cubit/vendor_orders_cubit.dart';
-import '../dialogs/category_dialog.dart';
-import '../widgets/product_editor_sheet.dart';
-import '../widgets/vendor_shared_widgets.dart';
-import 'vendor_order_detail_screen.dart';
 
 class VendorDashboardScreen extends StatefulWidget {
   const VendorDashboardScreen({super.key});
@@ -99,7 +99,7 @@ class VendorOverviewTab extends StatelessWidget {
                 await ordersCubit.load();
               },
               child: ListView(
-                padding: pagePadding,
+                padding: const EdgeInsets.fromLTRB(20, 12, 20, 24),
                 children: [
                   OverviewHero(
                     pendingOrders: pendingOrders,
@@ -191,7 +191,7 @@ class VendorProductsTab extends StatelessWidget {
       builder: (context, state) => RefreshIndicator(
         onRefresh: () => context.read<VendorCatalogCubit>().load(),
         child: ListView(
-          padding: pagePadding,
+          padding: const EdgeInsets.fromLTRB(20, 12, 20, 24),
           children: [
             SectionTitle(
               title: 'vendor.products.title'.tr(),
@@ -241,7 +241,7 @@ class VendorOrdersTab extends StatelessWidget {
       builder: (context, state) => RefreshIndicator(
         onRefresh: () => context.read<VendorOrdersCubit>().load(),
         child: ListView(
-          padding: pagePadding,
+          padding: const EdgeInsets.fromLTRB(20, 12, 20, 24),
           children: [
             SectionTitle(title: 'vendor.orders.title'.tr()),
             const SizedBox(height: 12),
@@ -278,7 +278,7 @@ class VendorCategoriesTab extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocBuilder<VendorCatalogCubit, VendorCatalogState>(
       builder: (context, state) => ListView(
-        padding: pagePadding,
+        padding: const EdgeInsets.fromLTRB(20, 12, 20, 24),
         children: [
           SectionTitle(
             title: 'vendor.categories.title'.tr(),

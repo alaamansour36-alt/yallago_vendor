@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../cubit/vendor_auth_cubit.dart';
+import '../../../auth/presentation/cubit/vendor_auth_cubit.dart';
 import 'vendor_dashboard_screen.dart';
-import 'vendor_login_screen.dart';
+import '../../../auth/presentation/screens/vendor_login_screen.dart';
 
 class VendorRootScreen extends StatelessWidget {
   const VendorRootScreen({super.key});

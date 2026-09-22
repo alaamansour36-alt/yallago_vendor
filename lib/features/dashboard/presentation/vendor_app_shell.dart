@@ -2,16 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../core/network/api_client.dart';
-import '../data/repositories/vendor_auth_repository.dart';
-import '../data/repositories/vendor_catalog_repository.dart';
-import '../data/repositories/vendor_orders_repository.dart';
-import '../data/services/vendor_auth_service.dart';
-import '../data/services/vendor_catalog_service.dart';
-import '../data/services/vendor_orders_service.dart';
-import 'cubit/vendor_auth_cubit.dart';
-import 'cubit/vendor_catalog_cubit.dart';
-import 'cubit/vendor_orders_cubit.dart';
-import 'vendor_screens.dart';
+import '../../auth/data/repositories/vendor_auth_repository.dart';
+import '../../catalog/data/repositories/vendor_catalog_repository.dart';
+import '../../orders/data/repositories/vendor_orders_repository.dart';
+import '../../auth/data/services/vendor_auth_service.dart';
+import '../../catalog/data/services/vendor_catalog_service.dart';
+import '../../orders/data/services/vendor_orders_service.dart';
+import '../../auth/presentation/cubit/vendor_auth_cubit.dart';
+import '../../catalog/presentation/cubit/vendor_catalog_cubit.dart';
+import '../../orders/presentation/cubit/vendor_orders_cubit.dart';
+import 'screens/vendor_root_screen.dart';
 
 class VendorAppShell extends StatelessWidget {
   const VendorAppShell({super.key});

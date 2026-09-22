@@ -1,6 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:yallago/features/catalog/data/models/vendor_models.dart';
 
-import '../../data/models/vendor_models.dart';
 import '../../data/repositories/vendor_orders_repository.dart';
 
 class VendorOrdersState {

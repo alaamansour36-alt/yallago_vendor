@@ -1,4 +1,5 @@
-import '../models/vendor_models.dart';
+import 'package:yallago/features/catalog/data/models/vendor_models.dart';
+
 import '../services/vendor_orders_service.dart';
 
 class VendorOrdersRepository {

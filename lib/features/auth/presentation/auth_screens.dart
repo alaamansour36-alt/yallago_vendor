@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../vendor/presentation/vendor_app.dart';
+import '../../dashboard/presentation/vendor_app_shell.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});

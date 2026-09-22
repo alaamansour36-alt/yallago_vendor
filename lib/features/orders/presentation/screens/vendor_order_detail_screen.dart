@@ -1,13 +1,13 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:yallago/features/catalog/data/models/vendor_models.dart';
+import 'package:yallago/features/catalog/presentation/widgets/vendor_shared_widgets.dart';
 
 import '../../../../core/constants/app_colors.dart';
 import '../../../../core/constants/layout.dart';
 import '../../../../core/widgets/shared_widgets.dart';
-import '../../data/models/vendor_models.dart';
 import '../cubit/vendor_orders_cubit.dart';
-import '../widgets/vendor_shared_widgets.dart';
 
 class VendorOrderDetailScreen extends StatefulWidget {
   const VendorOrderDetailScreen({required this.orderId, super.key});
@@ -42,7 +42,7 @@ class _VendorOrderDetailScreenState extends State<VendorOrderDetailScreen> {
             return Center(child: Text('vendor.order_detail.unavailable'.tr()));
           }
           return ListView(
-            padding: pagePadding,
+            padding: const EdgeInsets.fromLTRB(20, 12, 20, 24),
             children: [
               Container(
                 padding: const EdgeInsets.all(18),

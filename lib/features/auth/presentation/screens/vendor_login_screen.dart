@@ -45,7 +45,7 @@ class _VendorLoginScreenState extends State<VendorLoginScreen> {
             }
           },
           builder: (context, state) => ListView(
-            padding: pagePadding,
+            padding: const EdgeInsets.fromLTRB(20, 12, 20, 24),
             children: [
               Container(
                 padding: const EdgeInsets.all(20),

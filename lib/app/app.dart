@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../core/theme/app_theme.dart';
 import '../features/shared/app_scope.dart';
-import '../features/vendor/presentation/vendor_app.dart';
+import '../features/dashboard/presentation/vendor_app_shell.dart';
 
 class YallaGoApp extends StatefulWidget {
   const YallaGoApp({super.key});

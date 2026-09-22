@@ -1,5 +1,6 @@
+import 'package:yallago/features/catalog/data/models/vendor_models.dart';
+
 import '../../../../core/network/api_client.dart';
-import '../models/vendor_models.dart';
 
 class VendorAuthService {
   VendorAuthService(this._apiClient);
